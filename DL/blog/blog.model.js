@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const BlogSchema = new mongoose.Schema({
-   creatorId: { type: mongoose.Types.ObjectId, ref: 'users' },
+   creatorId: { type: mongoose.Types.ObjectId, ref: 'users', required: true },
    title: { type: String },
    content: { type: String },
    numberOfViews: { type: Number },

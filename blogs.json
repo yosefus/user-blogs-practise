@@ -1,0 +1,72 @@
+[
+   {
+      "_id": "1",
+      "title": "How to create a simple blog with Node.js and Mongoose",
+      "content": "In this tutorial, we will create a simple blog using Node.js and Mongoose. We will learn how to set up a basic Express server, create a MongoDB database using Mongoose, and perform CRUD operations on the blog posts.",
+      "numberOfViews": 50,
+      "image": "https://example.com/blog/image1.jpg"
+   },
+   {
+      "_id": "2",
+      "title": "10 Tips for writing better Node.js code",
+      "content": "Node.js is a powerful and versatile platform for building web applications. However, writing clean and efficient code can be a challenge. Here are 10 tips for writing better Node.js code that is easier to maintain, debug, and scale.",
+      "numberOfViews": 75,
+      "image": "https://example.com/blog/image2.jpg"
+   },
+   {
+      "_id": "3",
+      "title": "How to implement authentication in a Node.js app",
+      "content": "Authentication is a critical part of many web applications. In this tutorial, we will show you how to implement authentication in a Node.js app using Passport.js and JSON Web Tokens (JWT).",
+      "numberOfViews": 120,
+      "image": "https://example.com/blog/image3.jpg"
+   },
+   {
+      "_id": "4",
+      "title": "Using Mongoose for object data modeling in Node.js",
+      "content": "Mongoose is a popular object data modeling (ODM) library for Node.js that provides a straightforward and powerful way to interact with MongoDB databases. In this tutorial, we will show you how to use Mongoose for creating models, schema, and perform CRUD operations.",
+      "numberOfViews": 80,
+      "image": "https://example.com/blog/image4.jpg"
+   },
+   {
+      "_id": "5",
+      "title": "10 common mistakes to avoid when writing Node.js code",
+      "content": "Node.js is a powerful and versatile platform, but it can be easy to make mistakes when writing code. In this blog post, we will discuss 10 common mistakes to avoid when writing Node.js code, including error handling, asynchronous programming, and more.",
+      "numberOfViews": 95,
+      "image": "https://example.com/blog/image5.jpg"
+   },
+   {
+      "_id": "6",
+      "title": "Building a RESTful API with Node.js and Express",
+      "content": "RESTful APIs are a popular way to provide data to clients. In this tutorial, we will show you how to build a RESTful API with Node.js and Express. We will cover topics such as routing, middleware, error handling, and more.",
+      "numberOfViews": 150,
+      "image": "https://example.com/blog/image6.jpg"
+   },
+   {
+      "_id": "7",
+      "title": "Debugging Node.js applications with Visual Studio Code",
+      "content": "Debugging Node.js applications can be a challenge, but Visual Studio Code provides several powerful tools to help make the process easier. In this tutorial, we will show you how to use Visual Studio Code to debug Node.js applications.",
+      "numberOfViews": 100,
+      "image": "https://example.com/blog/image7.jpg"
+   },
+   {
+      "_id": "8",
+      "title": "Securing your Node.js application with SSL/TLS",
+      "content": "Securing your Node.js application is essential to protect sensitive data and prevent unauthorized access. In this tutorial, we will show you how to secure your Node.js application with SSL/TLS by generating and installing SSL/TLS certificates.",
+      "numberOfViews": 90,
+      "image": "https://example.com/blog/image8.jpg"
+   },
+   {
+      "_id": "9",
+      "title": "Using async/await for cleaner and more readable Node.js code",
+      "content": "Asynchronous programming can be challenging to write and debug. However, with the introduction of async/await in Node.js, writing asynchronous code has become much cleaner and more readable. In this tutorial, we will show you how to use async/await for writing cleaner and more readable Node.js code.",
+      "numberOfViews": 65,
+      "image": "https://example.com/blog/image9.jpg"
+   },
+   {
+      "_id": "10",
+      "title": "Deploying a Node.js app to a cloud platform",
+      "content": "Deploying a Node.js app to a cloud platform can be a great way to improve scalability and reduce operational costs. In this tutorial, we will show you how to deploy a Node.js app to a cloud platform using Heroku, a popular cloud platform provider.",
+      "numberOfViews": 110,
+      "image": "https://example.com/blog/image10.jpg"
+   }
+]
