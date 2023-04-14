@@ -1,7 +1,7 @@
 
 
 
-const { create, read, readOne, updateOneById, del } = require("../DL/user/user.controller")
+const { create, readOne, updateOneById, del } = require("../DL/user/user.controller")
 
 const u = {
    name: '',

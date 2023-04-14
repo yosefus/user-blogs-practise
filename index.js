@@ -7,8 +7,22 @@ const { connectToBb } = require('./DL/db')
 connectToBb()
 
 const { register, updateUser, login, deleteUser } = require('./BL/user.service')
+const { createBlog, updateBlog } = require('./BL/blog.servise')
 
 app.use(express.json())
+app.use((req, res, next) => {
+   console.log(req.path)
+   // get user by token
+   req.user = {
+      "_id": "6439030e203f6c3e08538db9",
+      "name": "meir",
+      "email": "r@r",
+      "password": "1234",
+      "isActive": true,
+      "__v": 0
+   }
+   next()
+})
 
 app.post('/api/user/register', async (req, res) => {
    try {
@@ -38,10 +52,10 @@ app.delete('/api/user/delete/:id', async (req, res) => {
    }
 })
 
+
 app.post('/api/user/login', async (req, res) => {
    try {
-      const { body, query } = req
-      console.log(query);
+      const { body, query, user } = req
       const u = await login(body)
       res.send(u)
    } catch (error) {
@@ -52,8 +66,26 @@ app.post('/api/user/login', async (req, res) => {
 // blogs =>
 
 // /api/blog/create POST
+app.post('/api/blog/create', async (req, res) => {
+   try {
+      const { body, user } = req
+      const newBlog = await createBlog(body, user._id)
+      res.send(newBlog)
+   } catch (error) {
+      res.status(500).send(error?.message || error)
+   }
+})
 
 // /api/blog/update/:id PUT
+app.put('/api/blog/update/:id', async (req, res) => {
+   try {
+      const { body, params, user } = req
+      const newBlog = await updateBlog(params.id, body, user._id)
+      res.send(newBlog)
+   } catch (error) {
+      res.status(500).send(error?.message || error)
+   }
+})
 
 // /api/blog/delete/:id DELETE
 
